@@ -16,9 +16,12 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public abstract class BaseController<T extends BaseEntity> {
     
-    @Autowired
+    
     protected BaseService<T> service;
 
+    public BaseController(BaseService<T> service) {
+		this.service = service;
+	}
 
     @GetMapping
     public ResponseEntity<List<T>> buscarTodos() {

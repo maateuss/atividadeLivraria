@@ -2,6 +2,8 @@ package com.mateus.atividadeLivraria.services.interfaces;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import com.mateus.atividadeLivraria.model.BaseEntity;
 
 public interface BaseService<T extends BaseEntity> {

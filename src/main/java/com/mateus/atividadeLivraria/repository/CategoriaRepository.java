@@ -3,9 +3,9 @@ package com.mateus.atividadeLivraria.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.mateus.atividadeLivraria.model.BaseEntity;
+import com.mateus.atividadeLivraria.model.Categoria;
 
 @Repository
-public interface BaseRepository<T extends BaseEntity> extends JpaRepository<T, Long> {
+public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
     
 }
